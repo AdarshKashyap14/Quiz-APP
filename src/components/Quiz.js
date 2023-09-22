@@ -60,24 +60,28 @@ function Quiz() {
   useEffect(() => {
     // Countdown timer
     const timerInterval = setInterval(() => {
-      if (timer > 0) {
+      if (timer > 0 && !quizEnded) { // Check if the quiz is not finished
         setTimer(timer - 1);
       } else {
-        // Auto-submit the quiz
+        // Auto-submit the quiz or do nothing if the quiz is finished
         clearInterval(timerInterval);
-        handleFinish(); // Automatically finish the quiz when the timer ends
+        if (!quizEnded) {
+          setQuizEnded(true);
+        }
       }
     }, 1000);
-
+  
     return () => {
       clearInterval(timerInterval);
     };
-  }, [timer]);
+  }, [timer, quizEnded]);
+  
 
   const handleFinish = () => {
     // Mark the quiz as finished when the user clicks the "Finish" button
     setQuizEnded(true);
     setFinishQuiz(true);
+    
   };
 
   const handleQuestionNavigation = (index) => {
