@@ -1,71 +1,70 @@
-# FullStack Developer Intern Quiz Application
+# Getting Started with Create React App
 
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Objective
-Quiz App Having navigation feature
+## Available Scripts
 
-## Table of Contents
+In the project directory, you can run:
 
-- [Requirements](#requirements)
-- [Features](#features)
-- [Tech Stack](#tech-stack)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Project Structure](#project-structure)
-- [API Integration](#api-integration)
-- [Navigation](#navigation)
-- [End of Quiz](#end-of-quiz)
-- [Timer](#timer)
-- [Code Quality](#code-quality)
-- [License](#license)
-- [Contact](#contact)
+### `npm start`
 
-## Requirements
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-### Quiz Layout & Flow
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-- The application starts with a start page where users need to submit their email address.
-- After submitting the email address, the application displays 15 quiz questions.
-- A timer is displayed at the top of the page, counting down from 30 minutes. The quiz automatically submits when the timer reaches zero.
+### `npm test`
 
-### Navigation
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-- Users can navigate to specific questions.
-- An overview panel shows all questions and indicates:
-  - Questions visited by the user.
-  - Questions attempted by the user.
+### `npm run build`
 
-### End of Quiz
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-- After completing the quiz or when the timer ends, users are directed to a report page.
-- The report displays each question with the user's answer and the correct answer side by side for easy comparison.
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-### Data Source
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-- Quiz questions are fetched from the [Open Trivia Database API](https://opentdb.com/api.php?amount=15).
-- The question parameter from the API is used for displaying questions.
-- Choices for each question are created by concatenating the correct_answer and incorrect_answers parameters.
-- The correct answer for each question is obtained from the correct_answer parameter.
+### `npm run eject`
 
-## Features
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-- Functional quiz application that fulfills all requirements.
-- Bug-free code that runs without errors.
-- Clean, well-organized code following best practices.
-- Integration with the Open Trivia Database API.
-- User-friendly navigation and question overview.
-- Accurate timer for quiz completion.
-- Detailed report page for quiz results.
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-## Tech Stack
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-- React.js
-- Axios (for API requests)
-- HTML/CSS (for styling)
-- JavaScript (ES6+)
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Installation
+## Learn More
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/AdarshKashyap14/Quiz-APP.git
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
